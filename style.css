@@ -1,23 +1,163 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #4fb7cf;
-    color: black;
+    background-color: #0b1a35;
+    color: #e0e6ed;
 }
 
-.contenido{
+.contenido {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #3f89a6;
+    background-color: #1b2a49;
     padding: 20px;
-    box-shadow: 3px 3px 20px rgba(0,0,0,0.5);
+    box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.7);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #162545;
+    color: #e0e6ed;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #162545;
+    padding: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+nav a {
+    color: #ffbf00;
+    text-decoration: none;
+    padding: 10px;
+
+    transition: all 0.3s;
+}
+
+nav a:hover {
+    background-color: #d1c2aa;
+    color: black;
+    border-radius: 5px;
+
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    padding: 20px;
+    
+
+}
+
+.nav-list li {
+    padding: 10px;
+    
+   
+}
+
+.nav-list ul li{
+    display: flex;
+justify-content: space-between;
+
+}
+
+aside {
+    height: 100%;
+    width: 25%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    box-sizing: border-box;
+    background-color: #121d33;
+    scrollbar-color: #e0ac0e white;
+ 
+}
+
+.hola {
+    float: left;
+    width: 25%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-right: 2px solid #bdbdbd;
+    height: 100vh;
+}
+
+aside h2 {
+    text-align: center;
+    color: #e0e6ed;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    padding: 10px;
+}
+
+aside ul li a {
+    color: #ffbf00;
+    text-decoration: none;
+}
+
+aside ul li a:hover {
+    color: #d2d0c3;
+}
+
+.galeria img {
+    width: 130px;
+    height: 150px;
+}
+
+/* Galeria */
+
+.galeria {
+    margin-top: 10px;
+  display: grid;
+  /* ajustar el grid a la pantalla sin mediaquery */
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+gap: 10px;
+  max-width: 400px;
+  justify-items: center;
+  /* Pone los iconos en el medio */
 }
 
 
+.gallery-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 5px;
+  /* Transición que transforma la escala en 0.6 segundos y las sombras tambien */
+  transition: all 0.6s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.gallery-image:hover {
+  /* se escala y rota */
+  transform: scale(1.1)  rotate(5deg);
+  box-shadow: 5px 5px 10px black;
+  cursor: pointer;
+}
