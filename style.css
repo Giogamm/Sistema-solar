@@ -6,8 +6,11 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #0b1a35;
     color: #e0e6ed;
+    background-image: url(./img/fondo-estrellas.webp);
+   
+    background-color: #121d33;
+
 }
 
 .contenido {

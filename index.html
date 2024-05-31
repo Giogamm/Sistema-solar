@@ -17,7 +17,7 @@
 
 <header>
 
-    <nav>
+    <nav id="navbar">
         <ul class="nav-list">
             <li><a href="#inicio">¿Qué es el sistema solar?</a></li>
             <li><a href="#planetas">Planetas</a></li>
@@ -39,18 +39,19 @@
         </ul>
 
         <h2>Galería</h2>
-        <div class="galeria">
-            <img src="img/jupiter.jpg" alt="" class="gallery-image">
-            <img src="img/marte.jpg" alt="" class="gallery-image">
-            <img src="img/mercurio.jpg" alt="" class="gallery-image">
-            <img src="img/neptuno.jpg" alt=""  class="gallery-image"> 
-            <img src="img/saturno.jpg" alt=""  class="gallery-image"> 
-            <img src="img/tierra.jpg" alt=""   class="gallery-image"> 
-            <img src="img/urano.png" alt=""    class="gallery-image"> 
-            <img src="img/venus.jpg" alt=""    class="gallery-image"> 
-        </div>
+<div class="galeria">
+    <img src="img/jupiter.jpg" alt="Júpiter" class="gallery-image" data-name="Júpiter">
+    <img src="img/marte.jpg" alt="Marte" class="gallery-image" data-name="Marte">
+    <img src="img/mercurio.jpg" alt="Mercurio" class="gallery-image" data-name="Mercurio">
+    <img src="img/neptuno.jpg" alt="Neptuno" class="gallery-image" data-name="Neptuno">
+    <img src="img/saturno.jpg" alt="Saturno" class="gallery-image" data-name="Saturno">
+    <img src="img/tierra.jpg" alt="Tierra" class="gallery-image" data-name="Tierra">
+    <img src="img/urano.png" alt="Urano" class="gallery-image" data-name="Urano">
+    <img src="img/venus.jpg" alt="Venus" class="gallery-image" data-name="Venus">
+</div>
     </aside>
 </header>
+
 
 <body>
     <div class="contenido">
@@ -122,7 +123,7 @@
             albergar entre 1.000 y 100.000 millones de objetos formados por hielo, metano y amoníaco que podrían sumar
             una masa de 5 veces la del planeta Tierra.</p>
     </div>
-
+<script src="script.js"></script>
     <footer>
         <p>&copy; Sistema solar. Todos los derechos reservados</p>
     </footer>
