@@ -46,7 +46,12 @@ footer {
     text-align: center;
     padding: 10px;
 }
+.title{
+    color: #ffbf00;
+    text-align: center;
+    margin: 20px;
 
+}
 nav {
     display: flex;
     justify-content: center;
@@ -65,10 +70,31 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #d1c2aa;
-    color: black;
+    background-color: #1e2f53;
+    color: white;
     border-radius: 5px;
 
+}
+
+.nav-list a {
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-list a::after {
+    /* se crea un pseudo elemento after que será visible cuando se haga hover */
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background: #ffbf00;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-list a:hover::after {
+    width: 100%;
 }
 
 .nav-list {
