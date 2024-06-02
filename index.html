@@ -291,16 +291,41 @@
         atardecer. Debido a las distancias de las órbitas de Venus y la Tierra desde el Sol, Venus nunca es visible más
         de tres horas antes del amanecer o tres horas después del ocaso
 
+        <h1 class="tituloJuegos" id="juegos">Juegos</h1>
+        <h2>¡Juega y aprende!</h2>
+        <div class="seccionJuegos">
+            <p>¿Sientes que ya has terminado de estudiar todo sobre el sistema solar? ¡Entonces diviértete con estos
+                juegos educativos sobre el sistema solar!</p>
+            <div class="juegos">
+                <img src="img/ahorcado.png" alt="" class="imgJuego" id="imgJuego">
+                <p class="nombreJuego">ahorcado</p>
+            </div>
+        </div>
+        
+        <div id="modal" class="modal">
+            <div class="modal-content">
+            <pre id="dibujodeahorcado"></pre>
+            <p id="Contador">Partidas ganadas: <span id="partidasGanadas"></span> /Partidas perdidas: <span id="partidasPerdidas"></span></p>
+            <p class="intentosFallidos">Intentos fallidos: <span id="intentosFallidos"></span></p>
+           <span id="pista"></span>
+           <span id="palabraOculta"></span>
+           <input type="text" name="" id="palabraUsuario" placeholder="Ingrese la letra" class="ingresarPalabra">
+              <button id="botonAdivinar" class="botonAdivinar">Adivinar</button>
+              <button id="jugarDenuevo" class="btnDenuevo">Jugar denuevo</button>
 
+              <span id="noti"></span>
+              <span id="perder"></span>
+              
 
-
+            </div>
+            <button id="closeModal" class="btnCerrar">Cerrar</button>
+        </div>
 
     </div>
-
-
-    <footer>
-        <p>&copy; Sistema solar. Todos los derechos reservados</p>
-    </footer>
-</body>
-
-</html>
+        <script src="script.js"></script>
+        <footer>
+            <p>&copy; Sistema solar. Todos los derechos reservados</p>
+        </footer>
+        </body>
+        
+        </html>
