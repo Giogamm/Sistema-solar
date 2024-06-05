@@ -19,7 +19,7 @@ var PartidasGanadas = 0;
 var PartidasPerdidas = 0;
 
 function juegoAhorcado() {
-  // Variables
+
 
   // Reset
   document.getElementById("botonAdivinar").disabled = false;
@@ -71,7 +71,7 @@ function juegoAhorcado() {
   var numero = Math.floor(Math.random() * Palabras.length);
   var palabra = Palabras[numero];
   var pista = Pistas[numero];
-  var palabraOculta = palabra.replace(/\S/g, "_");
+  var palabraOculta = palabra.replace(/\S/g, "_"); 
   console.log(palabra);
   var intentos = 0;
 

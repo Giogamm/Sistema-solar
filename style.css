@@ -326,6 +326,27 @@ aside ul li a:hover {
 
 }
 
+.Cuestion{
+  background-color: #1e2f53;
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: all .3s;
+}
+
+.Cuestion:hover {
+  background-color: #121d33;
+
+
+}
+
+.quizForm{
+display: grid;
+background-color: #182b53;
+box-shadow: 2px 3px 20px black;
+
+}
 /* 
 *media query
 */
