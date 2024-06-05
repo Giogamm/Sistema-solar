@@ -195,3 +195,36 @@ _| `;
     }
   }
 }
+
+// cuestionario
+document.getElementById("submitQuiz").addEventListener("click", function () {
+  var correctAnswers = {
+    1: "b",
+    2: "b",
+    3: "c",
+    4: "a",
+    5: "a",
+  };
+
+  var userAnswers = {
+    1: document.querySelector('input[name="q1"]:checked'),
+    2: document.querySelector('input[name="q2"]:checked'),
+    3: document.querySelector('input[name="q3"]:checked'),
+    4: document.querySelector('input[name="q4"]:checked'),
+    5: document.querySelector('input[name="q5"]:checked'),
+  };
+    var resultadoQuiz = document.getElementById("resultadoQuiz");
+
+  var score = 0;
+  for (var question in correctAnswers) {
+    if (userAnswers[question] && correctAnswers[question] === userAnswers[question].value) {
+      score++;
+    } else if (!userAnswers[question]) {
+      resultadoQuiz.innerText = "Por favor, responde todas las preguntas, falta la " + question + ".";
+      return;
+    }
+  }
+
+
+  resultadoQuiz.innerText = "Haz respondido correctamente " + score + " preguntas de 5";
+});

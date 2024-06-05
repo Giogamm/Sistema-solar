@@ -327,12 +327,13 @@ aside ul li a:hover {
 }
 
 .Cuestion{
-  background-color: #1e2f53;
+  background-color: #204ead;
   width: 120px;
   height: 40px;
   border-radius: 10px;
   margin-top: 20px;
   transition: all .3s;
+  color: white;
 }
 
 .Cuestion:hover {
@@ -345,7 +346,82 @@ aside ul li a:hover {
 display: grid;
 background-color: #182b53;
 box-shadow: 2px 3px 20px black;
+padding: 20px ;
 
+}
+#submitQuiz {
+    display: block;
+    margin: 0 auto;
+}
+
+#resultadoQuiz{
+    color: #ffbf00;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+
+#submitQuiz {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+#submitQuiz {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#submitQuiz span {
+  position: relative;
+  z-index: 2;
+}
+
+#submitQuiz::before, #submitQuiz::after {
+  content: "✨✨✨✨✨✨✨✨✨✨";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  line-height: 2.6;
+  color: transparent;
+  z-index: 0;
+  transition: all 0.3s;
+}
+
+#submitQuiz::before {
+  left: -100%;
+  text-align: left;
+  transition: all 0.3s;
+}
+
+#submitQuiz::after {
+  right: -100%;
+  text-align: right;
+  transition: all 0.3s;
+}
+
+#submitQuiz:hover::before {
+  color: #fff;
+  left: 0;
+}
+
+#submitQuiz:hover::after {
+  color: #fff;
+  right: 0;
+}
+
+#submitQuiz:hover span {
+  color: transparent;
+}
+
+#submitQuiz:hover span::before {
+  content: attr(data-text);
+  position: absolute;
+  /* !preguntar a fernanda */
+  color: white;
+  z-index: 3;
 }
 /* 
 *media query
