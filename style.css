@@ -417,7 +417,7 @@ padding: 20px ;
 }
 
 #submitQuiz:hover span::before {
-  content: attr(data-text);
+
   position: absolute;
   /* !preguntar a fernanda */
   color: white;
